@@ -1,0 +1,24 @@
+{
+	"manifest_version": 3,
+	"name": "CSDN easy",
+	"version": "1.0.0",
+	"description": "CSDN 可选可复制",
+	"author": "Hedgehog",
+	"icons": {
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"host_permissions": [
+		"https://blog.csdn.net/*"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://blog.csdn.net/*"
+			],
+			"js": [
+				"content-script.js"
+			]
+		}
+	]
+}
